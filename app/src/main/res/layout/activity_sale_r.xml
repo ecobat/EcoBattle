@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ecosha.ecobattle.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="各国の販売結果"
+                android:gravity="center_vertical"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="解説"
+                android:id="@+id/button01" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFCACA"
+            android:text="販売相手国・商品及び販売できた数"
+            android:textAlignment="center" />
+
+        <TableLayout
+            android:id="@+id/tablelayout01"
+            android:layout_weight="4"
+            android:background="#FFCACA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFECC0"
+            android:text="国マネーの動き"
+            android:textAlignment="center" />
+
+        <TableLayout
+            android:id="@+id/tablelayout02"
+            android:layout_weight="4"
+            android:background="#FFECC0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#C5EAF8"
+            android:text="国民マネーの動き"
+            android:textAlignment="center" />
+
+        <TableLayout
+            android:id="@+id/tablelayout03"
+            android:layout_weight="4"
+            android:background="#C5EAF8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#E2F0B6"
+            android:text="普及率の動き"
+            android:textAlignment="center" />
+
+        <TableLayout
+            android:id="@+id/tablelayout04"
+            android:layout_weight="4"
+            android:background="#E2F0B6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="普及率減少へ進む"
+            android:id="@+id/button02" />
+
+    </LinearLayout>
+</RelativeLayout>
